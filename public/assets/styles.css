@@ -1,0 +1,47 @@
+body {
+    margin: 0; /* Asegura que no haya márgenes en el cuerpo */
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+}
+
+.sidebar {
+    background-color: #000000; /* Color negro */
+    color: white; /* Color de texto blanco */
+    position: fixed; /* Fija la posición del menú */
+    top: 0; /* Mantiene el menú en la parte superior */
+    left: 0; /* Alinea el menú a la izquierda */
+    height: 100vh; /* Altura completa */
+    padding: 20px; /* Espacio interno */
+    z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+}
+
+.content {
+    margin-left: 250px; /* Espacio a la izquierda igual al ancho del menú */
+    padding: 20px; /* Espacio interno para el contenido */
+    background-color: #f8f9fa; /* Fondo claro para el contenido */
+    min-height: 100vh; /* Asegura que el contenido sea al menos tan alto como la ventana */
+}
+
+.nav-link {
+    color: white; /* Color de los enlaces */
+}
+
+.nav-link:hover {
+    color: #ffdb58; /* Color al pasar el ratón por encima */
+}
+
+.submenu {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo más claro para el submenú */
+}
+
+.nav-item:hover .submenu {
+    display: block;
+}
+
+.submenu .nav-link {
+    color: #ffdb58; /* Color de los enlaces del submenú */
+}
+
+.submenu .nav-link:hover {
+    color: white; /* Color al pasar el ratón por encima del submenú */
+}
